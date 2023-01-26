@@ -4,25 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>figma-logo</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius:200px;
+            padding:50px 75px;
+            background-color: darkgoldenrod;
+            margin-top:8rem;
+            text-decoration: none;
+     
 
-    <link rel="stylesheet" href="../dist/output.css">
+        }
+        .grid-bg{
+            display: grid;
+            grid-template-columns:50px 50px;
+            grid-template-rows: 50px 50px 50px;
+            
+
+        }
+    </style>
 </head>
 <body>
-    <div class="flex justify-center items-center w-100% h-[100vh]">
-        <div class="bg-amber-600 p-20 rounded-3xl">
-            <div class="grid grid-cols-2 grid-rows-3">
-                <div class="col-start-1 bg-red-600 border-solid rounded-full rounded-br-none rounded-tr-none w-14 h-14"></div>
+    <div class="main">
+        <div class="grid-bg">
+            <div style="grid-column-start:1;background-color:#fe3a00;height:50px;width:50px;border-top-left-radius:30px;border-bottom-left-radius: 30px;"></div>
 
-                <div class=" col-start-1 bg-indigo-800 border-solid rounded-full rounded-br-none rounded-tr-none"></div>
+            <div style="grid-column-start:2;background-color:rgb(247, 75, 56);heigh50px;width:50px;border-top-right-radius:30px;border-bottom-right-radius: 30px;"></div>
 
-                <div class=" col-start-1 bg-green-700 border-solid rounded-full rounded-tr-none"> </div>
-                
-                <div class=" col-start-2 row-start-1 bg-red-500 border-solid rounded-full rounded-bl-none rounded-tl-none w-14 h-14"></div>
+            <div style="grid-row-start:2;background-color:rgb(168, 66, 252);height:50px;width:50px;border-top-left-radius:30px;border-bottom-left-radius: 30px;"></div>
 
-                <div class=" col-start-2 row-start-2 bg-blue-600 border-solid rounded-full w-14 h-14"></div>
-            </div>
+            <div style="grid-row-start:3;background-color:rgb(2, 186, 110);height:50px;width:50px;border-top-left-radius:30px;border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;"></div>
+
+            <div style="grid-column-start:2;grid-row-start:2;background-color:rgb(27, 164, 210);height:50px;width:50px;border-radius:30px;"></div>
+
+           
+            
         </div>
     </div>
 </body>
